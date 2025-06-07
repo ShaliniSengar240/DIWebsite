@@ -18,11 +18,11 @@
       <div class="menu-icon" id="togglebutton">&#9776;</div>
       <ul id="navlinks" class="nav-links">
         <li class="cross" id="crosssymbol"><img src="assets/img/close.png" alt=""></li>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#Training">Training</a></li>
-        <li><a href="#brand">Brands</a></li>
-        <li><a href="contact">Contact Us</a></li>
+        <li class="navitem"><a href="#home">Home</a></li>
+        <li class="navitem"><a href="#services">Services</a></li>
+        <li class="navitem"><a href="#Training">Training</a></li>
+        <li class="navitem"><a href="#brand">Brands</a></li>
+        <li class="navitem"><a href="contact">Contact Us</a></li>
         
 
       </ul>
@@ -262,28 +262,39 @@
     </div>
 
   </div>
-  <p>This is version 2 of git and github.Check git status.
-    Check difference betwenn new file and old file. by git diff command.
-  </p>
-  <p>hiii from didn't commit but change</p>
-  <h1>I am third commit.</h1>
-  <h2>I am doing changes using github.</h2>
+  
 <script>
+
 toggle=document.getElementById('togglebutton');
 navbarr=document.getElementById('navlinks');
 
-toggle.addEventListener("click", function(){
-  if(document.body.style.width>"853px"){
-    toggle.style.display="none";
-  }
-  else{
-    navbarr.style.display='block';
-   
+toggle.addEventListener("click",function(){
+  navbarr.style.display="block";
+  
+  
+})
+navbarr.addEventListener("click",function(){
+  if (window.innerWidth < 853) {
+      navbarr.style.display = "none";
   }
 })
+
+  //  if (window.innerWidth < 853) {
+  //       navbarr.style.display = "none";
+  //     } else {
+  //       navbarr.style.display = "block"; // 853 ya usse zyada mein visible
+  //     }
+    
+
+
+
+
+
+
 cross=document.getElementById('crosssymbol');
 cross.addEventListener("click",function(){
   navbarr.style.display="none";
+  
 })
 
 
