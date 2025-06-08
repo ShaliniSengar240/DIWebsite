@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
- 
+
 </head>
 
 <body>
@@ -22,8 +22,8 @@
         <li class="navitem"><a href="#services">Services</a></li>
         <li class="navitem"><a href="#Training">Training</a></li>
         <li class="navitem"><a href="#brand">Brands</a></li>
-        <li class="navitem"><a href="contact">Contact Us</a></li>
-        
+        <li class="navitem"><a href="#contact">Contact Us</a></li>
+
 
       </ul>
 
@@ -46,7 +46,7 @@
         driving growth and success.
       </p>
       <div class="btn"><button class="blue fontfamily2"> <a href="#service">Our Services</a></button>
-        <button class="white fontfamily2">Contact Us</button>
+        <button class="white fontfamily2"><a href="#contact">Contact Us</a></button>
       </div>
 
 
@@ -225,13 +225,13 @@
 
     </div>
   </div>
-  <div class="contactpage">
+  <div class="contactpage" id="contact">
     <div class="contactbackbox"></div>
 
 
     <div class="contactcontenthero">
       <div class="head">CONTACT INFORMATION
-        
+
       </div>
       <div class="realcontact ">
         <div class="info">
@@ -262,63 +262,105 @@
     </div>
 
   </div>
-  
-<script>
 
-toggle=document.getElementById('togglebutton');
-navbarr=document.getElementById('navlinks');
+  </div>
+  <footer>
+    <div class="last">
+<div class="last1"> <h3 class="col">Our Services</h3>
+      <p>Web Development</p>
+      <p>Software Developmetn</p>
+      <p>E-Commerce Development</p>
+      <p>Responsive web design</p>
+      <p>Logo Design</p></div>
+     <div class="last2"><h3 class="col">Contact</h3>
+      <h4>Address:-</h4>
+      <p>Coracle Infotech India Pvt.Ltd.,Sumit Pushtak Bhandar,Hathras,U.P.,India</p>
+      
+      <p><b>Call us at:  </b>+91 9250962229</p>
+      <p><b>Email: info@coracle.in</b></p></div>
+      <div class="last3"><h3 class="col">Company Info:</h3>
+     <p>About Us:</p>
+     <p>Career</p>
+     <p>Hiring</p>
+     <p>Internships</p>
+     <p>Jobs</p></div>
+      <div class="lst4"><h3 class="col">Features</h3>
+     <p>Live Mentorship</p>
+     <p>Online Classes</p>
+     <p>Certification Courses</p>
+     <p>Live Chat</p>
+     <p>Unlimited Support</p>
+    </div></div>
+     
+  </footer>
+  <div class="endd"><div class="end">
+    <div class="end1">
+      <span>Powered by Coracle Infotech India Pvt.Ltd.</span>
+    <span>Home / About Us /Training / Courses /Contact Us</span>
+    </div>
+    <div class="end2">
+       <span>privacy policy</span>
+       <span>Terms and Condition</span>
+       <span>refund and cancellation</span>
+    </div></div>
+  
+   
+  <script>
 
-toggle.addEventListener("click",function(){
-  navbarr.style.display="block";
-  
-  
-})
-navbarr.addEventListener("click",function(){
-  if (window.innerWidth < 853) {
+    toggle = document.getElementById('togglebutton');
+    navbarr = document.getElementById('navlinks');
+
+    toggle.addEventListener("click", function () {
+      navbarr.style.display = "block";
+
+
+    })
+    navbarr.addEventListener("click", function () {
+      if (window.innerWidth < 853) {
+        navbarr.style.display = "none";
+      }
+    })
+
+    //  if (window.innerWidth < 853) {
+    //       navbarr.style.display = "none";
+    //     } else {
+    //       navbarr.style.display = "block"; // 853 ya usse zyada mein visible
+    //     }
+
+
+
+
+
+
+
+    cross = document.getElementById('crosssymbol');
+    cross.addEventListener("click", function () {
       navbarr.style.display = "none";
-  }
-})
 
-  //  if (window.innerWidth < 853) {
-  //       navbarr.style.display = "none";
-  //     } else {
-  //       navbarr.style.display = "block"; // 853 ya usse zyada mein visible
-  //     }
-    
+    })
 
 
 
 
-
-
-cross=document.getElementById('crosssymbol');
-cross.addEventListener("click",function(){
-  navbarr.style.display="none";
-  
-})
-
-
-
-
-// function toggleMenu() {
-      // document.getElementById("navlinks").classList.toggle("active");
+    // function toggleMenu() {
+    // document.getElementById("navlinks").classList.toggle("active");
     // }
 
-// let hero=document.getElementsByClassName("contactpage");
+    // let hero=document.getElementsByClassName("contactpage");
 
-// console.log(hero);
-// document.getElementById("navlinks").innerHTML = "Hello Dear Worlgd!";
-// const x = document.querySelectorAll("div.head");
-// console.log(x);
-// document.getElementsByClassName("head")[0].style.fontSize = "60px";
-// Lekin dhyaan rahe:
-// getElementsByClassName() hamesha ek HTMLCollection (array-like list) return karta hai — kyunki ek class name se multiple elements ho sakte hain.
-// document.querySelector(".hero1").innerText = "Welcome Shalini!";
+    // console.log(hero);
+    // document.getElementById("navlinks").innerHTML = "Hello Dear Worlgd!";
+    // const x = document.querySelectorAll("div.head");
+    // console.log(x);
+    // document.getElementsByClassName("head")[0].style.fontSize = "60px";
+    // Lekin dhyaan rahe:
+    // getElementsByClassName() hamesha ek HTMLCollection (array-like list) return karta hai — kyunki ek class name se multiple elements ho sakte hain.
+    // document.querySelector(".hero1").innerText = "Welcome Shalini!";
 
-// document.getElementById('navlinks').style.border="2px solid red"
+    // document.getElementById('navlinks').style.border="2px solid red"
 
-// document.getElementById('navlinks').style.maxWidth="30vw"
-</script>
+    // document.getElementById('navlinks').style.maxWidth="30vw"
+  </script>
 
 
 </body>
